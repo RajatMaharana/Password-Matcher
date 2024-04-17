@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <form>
+        <label for="password">Password</label>
+        <input type="password" id="password" onkeyup="checkPassword()" placeholder="Enter your password">
+        <p id="info"></p>
+        <p id="strongPassword"></p>
+        <br>
+        <label for="cnfrm-password">Confirm Password</label>
+        <input type="password" id="cnfrmPassword" onkeyup="checkPassword()" placeholder="Confirm your password">
+        <p id="message"></p>
+        <input type="button" value="SUBMIT" id="submit-btn" onclick="checkPassword()">
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
